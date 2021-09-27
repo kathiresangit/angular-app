@@ -21,9 +21,7 @@ stages:
 - stage: My_Environment
   displayName: Print Params, Test, Build and Push Stage
   jobs:
-  # Print all the parameters
-  
-   # Build an image from Dockerfile and push it to the Azure Container Registry, publish the Artifact for Release Pipeline
+ 
   - job: Build
     displayName: Build
     dependsOn: Application_Tests
