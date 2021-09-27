@@ -33,7 +33,7 @@ stages:
         script: |
           echo 'Print All Parameters:'
           echo 'Service Connection: ' $(dockerRegistryServiceConnection)
-          echo '`Image Repository: ' $(imageRepository)
+          echo 'Image Repository: ' $(imageRepository)
           echo 'Azure container Registry: ' $(containerRegistry)
           echo 'Dockerfile Path: ' $(dockerfilePath)
           echo 'Build ID: ' $(tag)
