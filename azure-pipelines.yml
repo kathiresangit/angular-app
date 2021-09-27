@@ -16,13 +16,13 @@ stages:
   - job: Build
     displayName: Build   
     pool:
-      vmImage: $(vmImageName)
+      vmImage: ubuntu-latest
     steps:
     - task: Docker@2
       displayName: Build and push the image to the Azure Container Registry
       inputs:
         containerRegistry: 'https://hub.docker.com/repository/docker/krdocker123/angular-app'
-        repository: '$(imageRepository)'
+        repository: 'https://hub.docker.com/repository/docker/krdocker123/angular-app'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
