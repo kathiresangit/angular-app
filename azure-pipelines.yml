@@ -72,6 +72,6 @@ stages:
           latest
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '$(System.DefaultWorkingDirectory)/deployment/'
+        PathtoPublish: '$(System.DefaultWorkingDirectory)/src/'
         ArtifactName: 'webinar-artifact'
         publishLocation: 'Container'
