@@ -22,7 +22,7 @@ stages:
       displayName: Build and push the image to the Azure Container Registry
       inputs:
         containerRegistry: 'https://hub.docker.com/repository/docker/krdocker123/angular-app'
-        repository: 'https://hub.docker.com/repository/docker/krdocker123/angular-app'
+        repository: 'krdocker123/angular-app'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
