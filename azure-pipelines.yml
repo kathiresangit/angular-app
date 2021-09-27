@@ -25,9 +25,7 @@ stages:
         repository: 'krdocker123/angular-app'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: |
-          $(tag)
-          latest
+        
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(System.DefaultWorkingDirectory)/src/'
