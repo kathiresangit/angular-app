@@ -6,18 +6,11 @@
 trigger:
 - main
 
-variables:
-  # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'webinar-acr-connection'
-  imageRepository: 'webinar-web-app'
-  containerRegistry: 'webinaracr.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
 
 #Stages
 stages:
+- stage: My_Environment
+  displayName: Build and Push Stage
   jobs:
  
   - job: Build
