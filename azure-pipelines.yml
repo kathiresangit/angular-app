@@ -18,8 +18,6 @@ variables:
 
 #Stages
 stages:
-- stage: My_Environment
-  displayName: Build and Push Stage
   jobs:
  
   - job: Build
